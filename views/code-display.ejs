@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OriginPastes</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/highlight.min.js" integrity="sha512-BNc7saQYlxCL10lykUYhFBcnzdKMnjx5fp5s5wPucDyZ7rKNwCoqJh1GwEAIhuePEK4WM9askJBRsu7ma0Rzvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/base16/summerfruit-dark.min.css" integrity="sha512-z0l5A1Ja4rMDCWXnfHkU/DSEPXfYP9bhCN6Fs546RlQkb2mHrdCRtraIUaUG6AYBE4k4auZrm0q/WaoOinW7VA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>hljs.highlightAll()</script>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <%- include("_buttons.ejs")%> 
+    <div class="wrapper">
+        <div class="line-numbers">
+            <% for (let i = 1; i <= code.split('\n').length; i++) { %>
+                <div><%= i %></div>
+            <% } %> 
+        </div>
+        <pre><code id="code-display" class="language-plaintext"><%= code %></code></pre>
+    </div>
+    
+    
+</body>
+</html>

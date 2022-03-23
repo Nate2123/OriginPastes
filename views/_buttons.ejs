@@ -1,0 +1,23 @@
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+<div class="buttons-wrapper">
+    <a href="/" class="logo"></a>
+    <div class="buttons">
+        <a href="/new" class="btn">New</a>
+        <% if (locals.canSave) {%> 
+            <button class="btn" type="submit">Save</button>
+        <% } %> 
+        <% if (locals.rawAccessible) {%> 
+            <a href="<%= documentId %>/raw" class="btn">Raw</a>
+        <% } %> 
+        <% if (locals.downloadable) {%> 
+            <a href="<%= documentId %>/raw/download" class="btn">Download</a>
+        <% } %>
+    </div>
+</div>
+<script>
+    const typewriter = new Typewriter('.logo');
+
+    typewriter.typeString('OriginPastes')
+    .start();
+</script>

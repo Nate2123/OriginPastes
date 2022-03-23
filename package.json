@@ -1,0 +1,23 @@
+{
+  "name": "originpastes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "devstart": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "alertifyjs": "^1.13.1",
+    "clipboard": "^2.0.10",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.8",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
