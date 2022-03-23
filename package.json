@@ -2,7 +2,7 @@
   "name": "originpastes",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "devstart": "nodemon server.js",
     "start": "node index.js"
