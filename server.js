@@ -6,6 +6,7 @@ const mongoose = require("mongoose")
 app.set('view engine', 'ejs')
 app.use(express.static("public"))
 app.use(express.urlencoded({extended: true}))
+
 const code = `Welcome to OriginPastes
 
 
@@ -95,5 +96,11 @@ app.get("/:id/raw/download", async (req, res) => {
         res.redirect('/')
     }
 })
-
+app.use(function(req, res, next){
+    res.status(404);
+  
+    
+  
+    res.redirect('/')
+});
 app.listen(process.env.PORT || 3000)

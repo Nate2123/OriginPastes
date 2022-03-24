@@ -2,10 +2,9 @@
   "name": "originpastes",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "devstart": "nodemon server.js",
-    "start": "node index.js"
+    "devstart": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
