@@ -57,8 +57,8 @@ OriginPastes developed by pixel
 @@@@((((((((((((((((((((((((((@@@@@@@@@@@@@#(((((((((((@@@@@@@@@@@@@@@@@@@@@@@@@
 @@@@@@@((((((((((((((((((((@@@@@@@@@@@@@@@@#(((((((((((@@@@@@@@@@@@@@@@@@@@@@@@@`
 const Document = require('./models/Document')
-const mySecret = process.env['mongodb']
-mongoose.connect(mySecret, {useUnifiedTopology: true})
+
+mongoose.connect('mongodb+srv://PixelatedWarrior:ViHbXgoaY3N6KlA4@cluster0.uz4ug.mongodb.net/OriginPastes?retryWrites=true&w=majority', {useUnifiedTopology: true})
 app.get("/", (req, res) => {
   res.render("code-display", {code})  
 })
