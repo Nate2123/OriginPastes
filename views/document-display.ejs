@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OriginPastes</title>
+    <meta content="<%= locals.id %> - OriginPastes" property="og:title" />
+    <meta content="Paste sharing website. No ads, no bullshit." property="og:description" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/highlight.min.js" integrity="sha512-BNc7saQYlxCL10lykUYhFBcnzdKMnjx5fp5s5wPucDyZ7rKNwCoqJh1GwEAIhuePEK4WM9askJBRsu7ma0Rzvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/base16/summerfruit-dark.min.css" integrity="sha512-z0l5A1Ja4rMDCWXnfHkU/DSEPXfYP9bhCN6Fs546RlQkb2mHrdCRtraIUaUG6AYBE4k4auZrm0q/WaoOinW7VA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script>hljs.highlightAll()</script>
@@ -18,9 +20,9 @@
                 <div><%= i %></div>
             <% } %> 
         </div>
-        <pre><code id="code-display" class="<%= locals.language ? `language-${locals.language}` : "" %>"><%= code %></code></pre>
+        <pre><code id="code-display"><%= code %></code></pre>
     </div>
     
-    
+    <%- include("_footer.ejs")%> 
 </body>
 </html>

@@ -6,6 +6,10 @@ const documentScheme = new mongoose.Schema({
         type: String,
         required: true
     },
+    ip:{
+      type: String,
+      required: true
+    }
 })
 
 module.exports = mongoose.model("Document", documentScheme)

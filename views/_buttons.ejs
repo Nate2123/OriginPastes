@@ -8,11 +8,12 @@
             <button class="btn" type="submit">Save</button>
         <% } %> 
         <% if (locals.rawAccessible) {%> 
-            <a href="<%= documentId %>/raw" class="btn">Raw</a>
+            <a href="<%= locals.id %>/raw" class="btn">Raw</a>
         <% } %> 
         <% if (locals.downloadable) {%> 
-            <a href="<%= documentId %>/raw/download" class="btn">Download</a>
+            <a href="<%= locals.id %>/raw/download" class="btn">Download</a>
         <% } %>
+        
     </div>
 </div>
 <script>
